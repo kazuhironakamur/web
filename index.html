@@ -109,17 +109,27 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>ITインフラも普通のインフラと同様、作ったら終わりではなく、維持管理をし続ける必要があります。<br>さらに改善も進めていく必要がありますが、インフラはとにかく検証/ノウハウの蓄積に時間がかかることと、お金がかかることが多いです。<br>端的に言うと、いいものは高いです。<br>クラウドの登場でだいぶ常識は変わってきましたが無料枠で勉強をしても触れない技術が多く、少し凝ったことをやると数万課金されてしまいます。<br>個人で数万課金されるのは結構痛いですよね…。</p>
-<p>特にシステム導入後にケアしにくいのが、冗長化とディザスタリカバリです。<br>規模として、ディザスタリカバリを考える必要が高くない場合もありますが、冗長化は各種システムを導入する際、常に頭の片隅に置いておく必要があります。<br>意外とバックアップも後からどうこうやりにくかったりします。<br>色々な経験を積んだメンバーで検討を繰り返して自分たちなりの正解を見つけていく必要があります。</p>
+        <h1 id="ITインフラは作ったら終わり？"><a href="#ITインフラは作ったら終わり？" class="headerlink" title="ITインフラは作ったら終わり？"></a>ITインフラは作ったら終わり？</h1><p>ITインフラも普通のインフラと同様、作ったら終わりではなく、維持管理をし続ける必要があります。<br>さらに改善も進めていく必要があり、考えること、やることはいっぱいあります。<br>インフラはとにかく検証/ノウハウの蓄積に時間がかかることと、お金がかかることが多いです。<br>検証しようとするとまず買わないといけない・契約しないといけない場合が多く端的に言うと、いいものは高いです。</p>
+<h1 id="クラウドの登場でだいぶ変わってきた"><a href="#クラウドの登場でだいぶ変わってきた" class="headerlink" title="クラウドの登場でだいぶ変わってきた"></a>クラウドの登場でだいぶ変わってきた</h1><p>クラウドの登場でだいぶ常識は変わってきましたが無料枠で勉強をしても触れない技術が多いです。<br>個人で数万課金されるのは結構痛いですよね…。<br>過去にAWSのS3、Lambda、DynamoDBの組み合わせでWebアプリケーションの個人開発をやってみました。<br>その際に興味本位で建てたRDSの存在をすっかり忘れていて2万円課金されてしまいました…。<br>データを1つも登録(insert)していなかったのに(笑)</p>
+<h1 id="冗長化とディザスタリカバリ"><a href="#冗長化とディザスタリカバリ" class="headerlink" title="冗長化とディザスタリカバリ"></a>冗長化とディザスタリカバリ</h1><p>特にシステム導入後にケアしにくいのが、冗長化とディザスタリカバリ(災害時にシステムを継続稼働させること)です。</p>
+<p>規模として、ディザスタリカバリを考える必要が高くない場合もあります。<br>例えば従業員も顧客も東京にしかないなど地理的に狭い範囲でビジネスを展開している場合です。</p>
+<p>しかし、冗長化は各種システムを導入・構築する際、常に頭の片隅に置いておく必要があります。<br>意外とバックアップも後からどうこうやりにくかったりします。<br>色々な経験を積んだメンバーで検討を繰り返して自分たちなりの正解を見つけていく必要があります。</p>
 <img src="/web/2021/03/09/2021-03-09/bousai_7707_color.webp" class="" title="防災対策をしっかり">
 
-<p>冗長化とは、あえてシステムに冗長(無駄)を加えることです。<br>例えば、ある機能を提供するシステムの最小構成がサーバー1台だとすると、そのサーバーを2台などの複数台で構成します。<br>このように1台壊れても機能の提供が停止しないシステムを構成することを冗長構成とする、冗長化する、などといいます。<br>やってみなければなかなかイメージがつきませんが、非常に難しいです。</p>
-<p>ディザスタリカバリとは、災害などの大規模の障害からの業務回復を考慮して、システム全体を構築することを指します。たぶん。<br>複数のデータセンターに分散してサーバーを配置し、冗長構成をとらなければなりません。<br>システムの使用者に拠点の変更を意識させずにディザスタリカバリを行うことは意外に難しいです。</p>
+<h1 id="冗長化とは"><a href="#冗長化とは" class="headerlink" title="冗長化とは"></a>冗長化とは</h1><p>あえてシステムに冗長(無駄)を加えることです。<br>例えば、ある機能を提供するシステムの最小構成がサーバー1台だとすると、そのサーバーを2台などの複数台で構成します。<br>このように1台壊れても機能の提供が停止しないシステムを構成することを冗長構成とする、冗長化する、などといいます。<br>やってみなければなかなかイメージがつきませんが、非常に難しいです。</p>
+<h1 id="ディザスタリカバリとは"><a href="#ディザスタリカバリとは" class="headerlink" title="ディザスタリカバリとは"></a>ディザスタリカバリとは</h1><p>災害などの大規模の障害からの業務回復を考慮して、システム全体を構築することを指します。たぶん。<br>複数のデータセンターに分散してサーバーを配置し、冗長構成をとらなければなりません。<br>システムの使用者に拠点の変更を意識させずにディザスタリカバリを行うことは意外に難しいです。</p>
+<h1 id="クラウド環境の余談"><a href="#クラウド環境の余談" class="headerlink" title="クラウド環境の余談"></a>クラウド環境の余談</h1><p>GCPもFirebaseを使って子供のおこづかい帳を個人開発してみました。<br><a target="_blank" rel="noopener" href="https://gohobi-9a425.web.app/">ごほうび</a></p>
+<p>色々と機能を追加しようと企んでいたのですが、根っこの設計に不備を見つけてしまいげんなり中です。<br>で、妻に「サブスクにしようぜ」って言ったら、こんなアプリで金払うわけねぇだろって優しく言われました。</p>
+<p>AzureはMinecraftというゲームのサーバーを建ててみました。<br>YouTubeに建ててる様子を上げてみました。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C178iGdCNIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wp9BBMF0o5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>GCP側のアプリはちょくちょく使っていて、Azure側は放置しています。<br>それでも無課金なのですごくありがたいです。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckm1z4o6i0001yf2vckjzbcqq" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckm5ng6hz0001542v3vfe7zoi" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
@@ -169,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckm1z4o6c0000yf2vbsir6ups" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckm5ng6i10002542vh0yu79y8" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
@@ -216,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckm1z4o6m0003yf2vfwav0s2r" data-title="ITの仕事の種類" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckm5ng6hu0000542vdk7w09z6" data-title="ITの仕事の種類" class="article-share-link">Share</a>
       
       
       
@@ -266,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckm1z4o6n0005yf2veh0y2tmr" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckm5ng6i30003542v7bv80hqh" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
       
       
       
@@ -310,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckm1z4o6m0004yf2vc4p05tlp" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckm5ng6i50006542vhsa0ai6z" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
       
       
       
@@ -354,7 +364,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckm1z4o6n0007yf2vfwo5g47h" data-title="これは何？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckm5ng6i40005542vbwmwhvfs" data-title="これは何？" class="article-share-link">Share</a>
       
       
       
