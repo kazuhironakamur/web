@@ -87,6 +87,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2021-03-13-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/13/2021-03-13-2/" class="article-date">
+  <time class="dt-published" datetime="2021-03-12T23:41:33.000Z" itemprop="datePublished">2021-03-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/13/2021-03-13-2/">いにしえの仮想化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="物理と仮想基礎"><a href="#物理と仮想基礎" class="headerlink" title="物理と仮想基礎"></a>物理と仮想基礎</h1><p>仮想化の登場により、様々なものが影響を受けました。<br>時系列はよくわかりませんが、おそらく最初の仮想化はアプリケーションの仮想化です。<br>(ストレージが最初かも知れません…？)</p>
+<p>皆さんの良く使うExcelなどなどが仮想化され、各PCにインストールしなくても使えるようになりました。<br>アプリケーションサーバーにインストールされているExcelを共有することで、<br>あたかも自身のPCにインストールされているかのように使用できるようになりました。<br>(実行イメージをネットワーク経由でメモリ上に展開しているんでしょうけど、<br> 何をしているのか全く分かりません。とにかく天才って世の中にいるんですね！)</p>
+<p>この方式はライセンス的にかなりグレーで抜け穴が多かったのか最近は流行ってませんね。<br>インフラの構築・維持が難しいことや、アプリケーション仮想化ソフトウェアのライセンス費が高いと感じられてるのかも。<br>アプリケーションの設定をイメージ化して一括で管理できる良さがあります。<br>その反面、イメージの管理に追われることになりがちです。<br>デスクトップ仮想化の登場や、Webアプリケーションが便利すぎるから使われなくなったのかな。</p>
+<p>次に仮想化されたのはおそらくサーバーです。<br>仮想化といえばサーバー、というぐらいメジャーなものに成長しました。<br>その後、ネットワークの仮想化など、様々なものが仮想化されて行っています。</p>
+<h1 id="ストレージの仮想化"><a href="#ストレージの仮想化" class="headerlink" title="ストレージの仮想化"></a>ストレージの仮想化</h1><p>ストレージの仮想化っていうとクラウド上のディスクをイメージすると思います。<br>私はRAIDなどの技術も仮想化だなぁと思っています。<br>その考え方から、最初の仮想化はストレージかも知れないと考えたりしています。</p>
+<p>RAIDのそもそもの考え方は、やっすいディスクをいっぱい並列で使えば、<br>大容量で高速はディスクを安く調達できるよね、っていう発想からきています。<br>人間で極端にたとえると、100文字を一人に覚えさせるのは優秀な人が必要だから、1文字を100人に覚えさせるイメージ。<br>(100人…採算取れなさそう…)</p>
+<p>だから、RAID-0がストライピング(分散書き込みして高速化)なのかも知れません。<br>やっすいディスクをいっぱい繋いだ結果、壊れて消えちゃいましたーが起きてしまって、<br>じゃあ同じ内容をいっぱい書き込んだらいいじゃん！からのRAID-1のミラーリングが登場？したのかも知れません。<br>こちらも無理矢理例えると、同じことを2人の人に覚えてもらうイメージ。</p>
+<p>RAID-0と1、どっちがどっちかわからなくなるのでRAIDの最初の目的から覚えるといいかも。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckm6yu5vx00046l2v1gb49j1z" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2021-03-13" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/13/2021-03-13/" class="article-date">
@@ -116,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckm6y1il400040k2vfuoa0pcn" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckm6yu5vy00056l2v42xt5kib" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -161,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/11/2021-03-12/" data-id="ckm6y1il300030k2vfsvwdd5o" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/11/2021-03-12/" data-id="ckm6yu5vw00036l2v5uy31f5h" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
@@ -212,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckm6y1il000010k2vfvp55jpi" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckm6yu5vt00016l2ve00egqz7" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
@@ -262,7 +308,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckm6y1ikv00000k2vdv1qd4wm" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckm6yu5vo00006l2v82gr1i5u" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
@@ -309,7 +355,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckm6y1il500050k2v2t8h1eqb" data-title="ITの仕事の種類" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckm6yu5vy00076l2vboy9bc6b" data-title="ITの仕事の種類" class="article-share-link">Share</a>
       
       
       
@@ -359,7 +405,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckm6y1il600080k2v9121ecaw" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckm6yu5vz00096l2v0a527anh" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
       
       
       
@@ -403,7 +449,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckm6y1il500070k2vf7ewecgg" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckm6yu5vz00086l2v8jni50ft" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
       
       
       
@@ -447,7 +493,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckm6y1il600090k2vgjmgbaza" data-title="これは何？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckm6yu5w0000a6l2v4ltjfglu" data-title="これは何？" class="article-share-link">Share</a>
       
       
       
@@ -504,6 +550,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/03/13/2021-03-13-2/">いにしえの仮想化</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/13/2021-03-13/">ハードウェアをもう少し</a>
           </li>
         
@@ -517,10 +567,6 @@
         
           <li>
             <a href="/web/2021/03/08/2021-03-08/">インフラの情勢</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/">ITの仕事の種類</a>
           </li>
         
       </ul>
