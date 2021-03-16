@@ -87,6 +87,78 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2021-03-16" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/16/2021-03-16/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T03:20:00.000Z" itemprop="datePublished">2021-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/16/2021-03-16/">恐怖のネットワーク</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="ネットワークの分かれ目"><a href="#ネットワークの分かれ目" class="headerlink" title="ネットワークの分かれ目"></a>ネットワークの分かれ目</h1><h2 id="大きなネットワークの分かれ目"><a href="#大きなネットワークの分かれ目" class="headerlink" title="大きなネットワークの分かれ目"></a>大きなネットワークの分かれ目</h2><p>すごく大きな括りでWAN(わん)とLAN(らん)に分かれます。<br>WANはいわゆるInternetのことです。全世界がつながっているネットワークをWANといいます。<br>LANは企業、組織、個人など小さな単位で管理されているネットワークを指します。<br>世の中のネットワークは膨大な数のLANとそれらをつなぐWANとで構成されています。</p>
+<h2 id="小さなネットワークの分かれ目"><a href="#小さなネットワークの分かれ目" class="headerlink" title="小さなネットワークの分かれ目"></a>小さなネットワークの分かれ目</h2><p>WANは世界の誰かが管理してくれているので分かれ目を意識することはほぼありません。<br>LANは自分たちで管理する必要があり、分かれ目を理解しておく必要があります。<br>LANって？</p>
+<table>
+<thead>
+<tr>
+<th>ネットワークアドレス</th>
+<th>ネットワークの用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>192.168.1.0/24</td>
+<td>1階の各種パソコン</td>
+</tr>
+<tr>
+<td>192.168.2.0/24</td>
+<td>2階の各種パソコン</td>
+</tr>
+<tr>
+<td>192.168.200.0/24</td>
+<td>サーバー室の各種機器</td>
+</tr>
+</tbody></table>
+<p>こんな感じです。<br><em><strong>いきなりわけのわからない数字が出てきた！</strong></em><br><em><strong>もうダメだ死んでしまう！逃げなきゃ！と思ったそこのあなた！</strong></em><br><em><strong>ちょっと待って！</strong></em></p>
+<p>1つを例にして、説明します。(ググるともっと良い説明がいっぱい出てきます。)<br>まず、ネットワークアドレスを以下の2つに分けて考えます。(そもそも24のところはネットワークアドレスじゃないんですけど…)<br>192.168.1.0<br>24</p>
+<p><em><strong>やっぱりわからない！ネットワーク怖い！逃げなきゃ！と思ったそこのあなた！</strong></em><br><em><strong>もうちょっと待って！</strong></em></p>
+<p>すごく乱暴に説明します。<br>192.168.1.0<br>の「192.168.」と「.0」は<strong>飾りみたいなもん</strong>です。(乱暴すぎます…)<br>今回の例では、ネットワークを識別するための数字は「1」になります。<br>どこの数字に注目するかは「24」の部分が影響するのですが、<em>複雑なことをしようとしなければ基本「24」</em>です。<br>この考え方をすれば以下のように言い換えられます。</p>
+<ul>
+<li>1階のネットワークは <strong>1</strong></li>
+<li>2階のネットワークは <strong>2</strong></li>
+<li>サーバー室のネットワークは <strong>200</strong></li>
+</ul>
+<p>このネットワークを識別するための数字が違うと、別のネットワークになります。<br>別のネットワークに分ける意味が分からないと思いますが、ここまでざっくりと理解してください。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbgzv9x000cs22v41xt4fyc" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2021-03-15" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/15/2021-03-15/" class="article-date">
@@ -117,10 +189,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmanmyz20008612v59lmfdnr" data-title="ネットワーク基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbgzv9w0009s22v7je3debz" data-title="ネットワーク基礎" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li></ul>
+
     </footer>
   </div>
   
@@ -173,11 +247,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmanmyz10007612v33nq59ot" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbgzv9v0008s22vahuc62gx" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9-Linux-Windows/" rel="tag">インフラ, Linux, Windows</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/OS/" rel="tag">OS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/Windows/" rel="tag">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li></ul>
 
     </footer>
   </div>
@@ -221,10 +295,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmanmyyz0003612ve3nrcrv2" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbgzv9t0004s22v41ex7bm5" data-title="いにしえの仮想化" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" rel="tag">仮想化</a></li></ul>
+
     </footer>
   </div>
   
@@ -262,10 +338,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmanmyz10005612vg2gmd7j8" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbgzv9u0005s22v3en8ayze" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li></ul>
+
     </footer>
   </div>
   
@@ -307,10 +385,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmanmyz00004612v8v5bdlid" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbgzv9s0003s22vg8at7urd" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li></ul>
+
     </footer>
   </div>
   
@@ -358,10 +438,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmanmyyw0001612vcgea3rjy" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmbgzv9p0001s22vfcjuci57" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li></ul>
+
     </footer>
   </div>
   
@@ -408,7 +490,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmanmyyr0000612v6pe03zv2" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmbgzv9k0000s22va3yqew6h" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
@@ -455,10 +537,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckmanmyz3000b612v3ptxcnyg" data-title="ITの仕事の種類" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckmbgzv9y000ds22vhaxy9kqg" data-title="ITの仕事の種類" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E9%96%8B%E7%99%BA/" rel="tag">開発</a></li></ul>
+
     </footer>
   </div>
   
@@ -505,51 +589,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckmanmyz4000c612vdlx34ooy" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-to-not-it" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/web/2021/02/02/to-not-it/" class="article-date">
-  <time class="dt-published" datetime="2021-02-02T03:30:00.000Z" itemprop="datePublished">2021-02-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/web/2021/02/02/to-not-it/">ITに飛び込んでみたい人へ</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="IT未経験者だけどITに興味がある方に向けて"><a href="#IT未経験者だけどITに興味がある方に向けて" class="headerlink" title="IT未経験者だけどITに興味がある方に向けて"></a>IT未経験者だけどITに興味がある方に向けて</h1><p>IT未経験者ではない方にとって、ITはわからないことがたくさんあります。<br>苦しいですが小さな小さな「わからない」をたくさん積み上げてください。<br>「わからない」に触れる度に、今の自分で理解できないか試してみてください。</p>
-<p>ITは難しいです。<br>ですが、ITは人間が考え出した技術です。<br>超常現象ではありません。<br>難しい部分は頭の良い人たちが組み上げてくれます。<br>天才達の肩の上で、文明の力を大いにふるってやりましょう。</p>
-<img src="2021/02/02/to-not-it/7789_color.png" width="300px" height="200px">
-
-<h1 id="だいじなこと"><a href="#だいじなこと" class="headerlink" title="だいじなこと"></a>だいじなこと</h1><p>大事なことは興味をもつことです。<br>自分にも理解できるかも知れない、という自分の可能性を捨てないことです。<br>いつか、たくさんの「わからない」点が、線でつながる瞬間が訪れます。<br>その線はあっという間に面になり、一気に理解が進む瞬間が訪れます。</p>
-<p>成長の頭打ち（スランプ）の先に、大きな成長があることはIT意外でも周知の事実です。<br>もしあなたが今苦しんでいるのなら、いまのあなたはスランプなのかも知れません。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckmanmyz2000a612v4qnd2dvv" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckmbgzv9z000gs22ve8jf8pro" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
       
       
       
@@ -579,7 +619,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9-Linux-Windows/" rel="tag">インフラ, Linux, Windows</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/OS/" rel="tag">OS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" rel="tag">仮想化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E9%96%8B%E7%99%BA/" rel="tag">開発</a></li></ul>
     </div>
   </div>
 
@@ -589,7 +629,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 10px;">インフラ</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9-Linux-Windows/" style="font-size: 10px;">インフラ, Linux, Windows</a>
+      <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/OS/" style="font-size: 10px;">OS</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 20px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 15px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 15px;">ハードウェア</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E9%96%8B%E7%99%BA/" style="font-size: 10px;">開発</a>
     </div>
   </div>
 
@@ -611,6 +651,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/03/16/2021-03-16/">恐怖のネットワーク</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/15/2021-03-15/">ネットワーク基礎</a>
           </li>
         
@@ -624,10 +668,6 @@
         
           <li>
             <a href="/web/2021/03/13/2021-03-13/">ハードウェアをもう少し</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/12/2021-03-12/">ハードウェア？ソフトウェア？</a>
           </li>
         
       </ul>
