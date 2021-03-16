@@ -94,7 +94,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>
+    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>►<a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/">名前解決</a>
   </div>
 
   </div>
@@ -132,11 +132,65 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/name-resolve/" data-id="ckmbs9adx000mbg2v7d9x9207" data-title="名前解決とWebサーバー基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/name-resolve/" data-id="ckmbscjmn000mgn2vazncer4v" data-title="名前解決とWebサーバー基礎" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/DNS/" rel="tag">DNS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" rel="tag">名前解決</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E6%AD%A3%E5%BC%95%E3%81%8D/" rel="tag">正引き</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E9%80%86%E5%BC%95%E3%81%8D/" rel="tag">逆引き</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-network-routing" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/16/network-routing/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T08:15:28.000Z" itemprop="datePublished">2021-03-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>►<a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/16/network-routing/">ルーティング</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>うわぁっ！出た！ルーティング！！<br>何度勉強してもわからなくなるアイツだッ！</p>
+<p>いよいよ出てきました。ルーティング。<br>異なるネットワーク間でパケットを中継することをルーティングというイメージはついたでしょうか。</p>
+<p>ルーティングを理解するには、<strong>ルーター</strong>を理解しなければなりません。<br>さらに、<strong>デフォルトゲートウェイ</strong>と<strong>ゲートウェイ</strong>も理解しなければなりません。<br>小規模の環境であれば、ルーターは(論理的に)1つしかなく、デフォルトゲートウェイは存在しますが、デフォルトではないゲートウェイはありません。<br>もう全く意味がわかりませんよね。大丈夫、怖がらないで！！</p>
+<p>概念を理解する必要があります。<br>「<strong>各端末のネットワークの問い合わせ先 = デフォルトゲートウェイ</strong>」です。<br>皆さんも何かがわからなかったら、誰かに教えてもらうと思います。<br><strong>各端末がネットワークについてわからなかった場合の問い合わせ先がデフォルトゲートウェイ</strong>です。</p>
+<h1 id="パソコンちゃんの気持ちになって考えよう"><a href="#パソコンちゃんの気持ちになって考えよう" class="headerlink" title="パソコンちゃんの気持ちになって考えよう"></a>パソコンちゃんの気持ちになって考えよう</h1><p>例えば、ネットワークAに所属するパソコンXが、ネットワークBに所属するパソコンYと通信したいとします。</p>
+<p>パソコンXはネットワークBがどこにあるかわからないので、自身のデフォルトゲートウェイとして設定されているネットワークAのルーターにパケットを送ります。<br>ネットワークAのルーターは、パソコンXから受け取ったパケットを、ネットワークBに送ります。<br>これがルーティングです。<br>ネットワークAのパケットがルーターを経由して、ネットワークBへ送られた瞬間こそ、ルーティングされた瞬間です。<br>なかなか理解しづらいのが、ゲートウェイという概念です。<br><strong>ゲートウェイは各パソコンに設定されています。</strong><br>当たり前ですが、<strong>ネットワークの設定経験が浅い方は、これを知らないことが多いです。</strong><br>パソコンXのゲートウェイに、ネットワークAのルーターが指定されています。</p>
+<p>以下はWindowsのPCでネットワーク情報を表示するipconfigというコマンドを実行した結果です。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ipconfigの結果</span><br><span class="line"> イーサネット アダプター イーサネット 2:</span><br><span class="line"></span><br><span class="line">    接続固有の DNS サフィックス . . . . .:</span><br><span class="line">    IPv4 アドレス . . . . . . . . . . . .: 192.168.1.139</span><br><span class="line">    サブネット マスク . . . . . . . . . .: 255.255.255.0</span><br><span class="line">    デフォルト ゲートウェイ . . . . . . .: 192.168.1.254</span><br></pre></td></tr></table></figure>
+
+<p>このように、デフォルトゲートウェイは、各機器にそれぞれ設定されています。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-routing/" data-id="ckmbscjmm000jgn2veqfw73p8" data-title="ルーティング" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/" rel="tag">ルーティング</a></li></ul>
 
     </footer>
   </div>
@@ -187,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbs9adx000pbg2v14sjd6yc" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbscjmo000pgn2v0kq67g83" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
       
       
       
@@ -239,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbs9adt000dbg2v2e1bhwnl" data-title="WANとLANってのがある" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbscjml000ggn2v11nobdn1" data-title="WANとLANってのがある" class="article-share-link">Share</a>
       
       
       
@@ -315,7 +369,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbs9ads000abg2vak6b6i93" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbscjn7002egn2vd4xe26sq" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
       
       
       
@@ -363,7 +417,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbs9adw000jbg2v07kcgbxs" data-title="ネットワーク基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbscjmg0005gn2vcqq8c8i0" data-title="ネットワーク基礎" class="article-share-link">Share</a>
       
       
       
@@ -425,7 +479,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbs9ads0008bg2v47m1a1s6" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbscjmj000agn2vgyvf7aok" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
       
       
       
@@ -477,7 +531,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbs9adq0005bg2vfossd2un" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbscjmj0008gn2v5lm4dzsc" data-title="いにしえの仮想化" class="article-share-link">Share</a>
       
       
       
@@ -524,7 +578,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbs9adq0006bg2v5rpn1ej1" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbscjmf0003gn2vb4nnbj0q" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -575,68 +629,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbs9ado0003bg2vaa5hakwu" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbscjmh0006gn2vc3apbkus" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021-03-09" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/web/2021/03/09/2021-03-09/" class="article-date">
-  <time class="dt-published" datetime="2021-03-09T10:50:45.000Z" itemprop="datePublished">2021-03-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/web/2021/03/09/2021-03-09/">インフラの整備</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="ITインフラは作ったら終わり？"><a href="#ITインフラは作ったら終わり？" class="headerlink" title="ITインフラは作ったら終わり？"></a>ITインフラは作ったら終わり？</h1><p>ITインフラも普通のインフラと同様、作ったら終わりではなく、維持管理をし続ける必要があります。<br>さらに改善も進めていく必要があり、考えること、やることはいっぱいあります。<br>インフラはとにかく検証/ノウハウの蓄積に時間がかかることと、お金がかかることが多いです。<br>検証しようとするとまず買わないといけない・契約しないといけない場合が多く端的に言うと、いいものは高いです。</p>
-<h1 id="クラウドの登場でだいぶ変わってきた"><a href="#クラウドの登場でだいぶ変わってきた" class="headerlink" title="クラウドの登場でだいぶ変わってきた"></a>クラウドの登場でだいぶ変わってきた</h1><p>クラウドの登場でだいぶ常識は変わってきましたが無料枠で勉強をしても触れない技術が多いです。<br>個人で数万課金されるのは結構痛いですよね…。<br>過去にAWSのS3、Lambda、DynamoDBの組み合わせでWebアプリケーションの個人開発をやってみました。<br>その際に興味本位で建てたRDSの存在をすっかり忘れていて2万円課金されてしまいました…。<br>データを1つも登録(insert)していなかったのに(笑)</p>
-<h1 id="冗長化とディザスタリカバリ"><a href="#冗長化とディザスタリカバリ" class="headerlink" title="冗長化とディザスタリカバリ"></a>冗長化とディザスタリカバリ</h1><p>特にシステム導入後にケアしにくいのが、冗長化とディザスタリカバリ(災害時にシステムを継続稼働させること)です。</p>
-<p>規模として、ディザスタリカバリを考える必要が高くない場合もあります。<br>例えば従業員も顧客も東京にしかないなど地理的に狭い範囲でビジネスを展開している場合です。</p>
-<p>しかし、冗長化は各種システムを導入・構築する際、常に頭の片隅に置いておく必要があります。<br>意外とバックアップも後からどうこうやりにくかったりします。<br>色々な経験を積んだメンバーで検討を繰り返して自分たちなりの正解を見つけていく必要があります。</p>
-<img src="/web/2021/03/09/2021-03-09/bousai_7707_color.webp" class="">
-
-<h1 id="冗長化とは"><a href="#冗長化とは" class="headerlink" title="冗長化とは"></a>冗長化とは</h1><p>あえてシステムに冗長(無駄)を加えることです。<br>例えば、ある機能を提供するシステムの最小構成がサーバー1台だとすると、そのサーバーを2台などの複数台で構成します。<br>このように1台壊れても機能の提供が停止しないシステムを構成することを冗長構成とする、冗長化する、などといいます。<br>やってみなければなかなかイメージがつきませんが、非常に難しいです。</p>
-<h1 id="ディザスタリカバリとは"><a href="#ディザスタリカバリとは" class="headerlink" title="ディザスタリカバリとは"></a>ディザスタリカバリとは</h1><p>災害などの大規模の障害からの業務回復を考慮して、システム全体を構築することを指します。たぶん。<br>複数のデータセンターに分散してサーバーを配置し、冗長構成をとらなければなりません。<br>システムの使用者に拠点の変更を意識させずにディザスタリカバリを行うことは意外に難しいです。</p>
-<h1 id="クラウド環境の余談"><a href="#クラウド環境の余談" class="headerlink" title="クラウド環境の余談"></a>クラウド環境の余談</h1><p>GCPもFirebaseを使って子供のおこづかい帳を個人開発してみました。<br><a target="_blank" rel="noopener" href="https://gohobi-9a425.web.app/">ごほうび</a></p>
-<p>色々と機能を追加しようと企んでいたのですが、根っこの設計に不備を見つけてしまいげんなり中です。<br>で、妻に「サブスクにしようぜ」って言ったら、こんなアプリで金払うわけねぇだろって優しく言われました。</p>
-<p>AzureはMinecraftというゲームのサーバーを建ててみました。</p>
-<p>GCP側のアプリはちょくちょく使っていて、Azure側は放置しています。<br>それでも無課金なのですごくありがたいです。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmbs9adk0001bg2vgzpb4d8p" data-title="インフラの整備" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/BCP/" rel="tag">BCP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" rel="tag">ディスタリカバリ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" rel="tag">冗長化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E6%95%B4%E5%82%99/" rel="tag">整備</a></li></ul>
 
     </footer>
   </div>
@@ -661,7 +658,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/web/categories/IT/">IT</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/web/categories/IT/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/web/categories/IT/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E9%96%8B%E7%99%BA/">開発</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/OS/">OS</a></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E9%96%8B%E7%99%BA/">開発</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/web/categories/IT/">IT</a></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/OS/">OS</a></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a></li><li class="category-list-item"><a class="category-list-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/">名前解決</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -671,7 +668,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/BCP/" rel="tag">BCP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/DNS/" rel="tag">DNS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/IT/" rel="tag">IT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/LAN/" rel="tag">LAN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/WAN/" rel="tag">WAN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" rel="tag">ディスタリカバリ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" rel="tag">仮想化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%85%A5%E9%96%80/" rel="tag">入門</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" rel="tag">冗長化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" rel="tag">分かれ目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%88%86%E5%89%B2/" rel="tag">分割</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" rel="tag">名前解決</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%9F%BA%E6%9C%AC/" rel="tag">基本</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%A2%83%E7%9B%AE/" rel="tag">境目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%95%B4%E5%82%99/" rel="tag">整備</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" rel="tag">未経験</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%AD%A3%E5%BC%95%E3%81%8D/" rel="tag">正引き</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E7%A8%AE%E9%A1%9E/" rel="tag">種類</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E9%80%86%E5%BC%95%E3%81%8D/" rel="tag">逆引き</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/BCP/" rel="tag">BCP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/DNS/" rel="tag">DNS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/LAN/" rel="tag">LAN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/WAN/" rel="tag">WAN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" rel="tag">ディスタリカバリ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/" rel="tag">ルーティング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" rel="tag">仮想化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%85%A5%E9%96%80/" rel="tag">入門</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" rel="tag">冗長化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" rel="tag">分かれ目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%88%86%E5%89%B2/" rel="tag">分割</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" rel="tag">名前解決</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%9F%BA%E6%9C%AC/" rel="tag">基本</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E5%A2%83%E7%9B%AE/" rel="tag">境目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%95%B4%E5%82%99/" rel="tag">整備</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" rel="tag">未経験</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E6%AD%A3%E5%BC%95%E3%81%8D/" rel="tag">正引き</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E7%A8%AE%E9%A1%9E/" rel="tag">種類</a></li><li class="tag-list-item"><a class="tag-list-link" href="/web/tags/%E9%80%86%E5%BC%95%E3%81%8D/" rel="tag">逆引き</a></li></ul>
     </div>
   </div>
 
@@ -681,7 +678,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/web/tags/BCP/" style="font-size: 10px;">BCP</a> <a href="/web/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/web/tags/IT/" style="font-size: 10px;">IT</a> <a href="/web/tags/LAN/" style="font-size: 10px;">LAN</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/WAN/" style="font-size: 10px;">WAN</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 10px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" style="font-size: 10px;">ディスタリカバリ</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 15px;">ハードウェア</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 20px;">入門</a> <a href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" style="font-size: 10px;">冗長化</a> <a href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" style="font-size: 10px;">分かれ目</a> <a href="/web/tags/%E5%88%86%E5%89%B2/" style="font-size: 10px;">分割</a> <a href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" style="font-size: 10px;">名前解決</a> <a href="/web/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 10px;">基本</a> <a href="/web/tags/%E5%A2%83%E7%9B%AE/" style="font-size: 10px;">境目</a> <a href="/web/tags/%E6%95%B4%E5%82%99/" style="font-size: 10px;">整備</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 15px;">未経験</a> <a href="/web/tags/%E6%AD%A3%E5%BC%95%E3%81%8D/" style="font-size: 10px;">正引き</a> <a href="/web/tags/%E7%A8%AE%E9%A1%9E/" style="font-size: 10px;">種類</a> <a href="/web/tags/%E9%80%86%E5%BC%95%E3%81%8D/" style="font-size: 10px;">逆引き</a>
+      <a href="/web/tags/BCP/" style="font-size: 10px;">BCP</a> <a href="/web/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/web/tags/LAN/" style="font-size: 10px;">LAN</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/WAN/" style="font-size: 10px;">WAN</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 10px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" style="font-size: 10px;">ディスタリカバリ</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 15px;">ハードウェア</a> <a href="/web/tags/%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/" style="font-size: 10px;">ルーティング</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 20px;">入門</a> <a href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" style="font-size: 10px;">冗長化</a> <a href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" style="font-size: 10px;">分かれ目</a> <a href="/web/tags/%E5%88%86%E5%89%B2/" style="font-size: 10px;">分割</a> <a href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" style="font-size: 10px;">名前解決</a> <a href="/web/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 10px;">基本</a> <a href="/web/tags/%E5%A2%83%E7%9B%AE/" style="font-size: 10px;">境目</a> <a href="/web/tags/%E6%95%B4%E5%82%99/" style="font-size: 10px;">整備</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 15px;">未経験</a> <a href="/web/tags/%E6%AD%A3%E5%BC%95%E3%81%8D/" style="font-size: 10px;">正引き</a> <a href="/web/tags/%E7%A8%AE%E9%A1%9E/" style="font-size: 10px;">種類</a> <a href="/web/tags/%E9%80%86%E5%BC%95%E3%81%8D/" style="font-size: 10px;">逆引き</a>
     </div>
   </div>
 
@@ -707,6 +704,10 @@
           </li>
         
           <li>
+            <a href="/web/2021/03/16/network-routing/">ルーティング</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/16/network-split/">ネットワークを分割する理由</a>
           </li>
         
@@ -716,10 +717,6 @@
         
           <li>
             <a href="/web/2021/03/16/2021-03-16/">恐怖のネットワーク</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/15/2021-03-15/">ネットワーク基礎</a>
           </li>
         
       </ul>
