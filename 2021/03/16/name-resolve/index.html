@@ -23,7 +23,7 @@
 <meta property="og:description" content="「名前解決」ってわかりますか？普段当たり前のように使用しているのですが、IT業界でも知らない人がいます。(最近はWeb系で当たり前に使うので知っている人がかなり増えてきている印象です。業務の畑が違うだけなので、知らないからどうこう、という内容ではありません。) 「名前解決」とは、「名前」から「IPアドレス」を調べることです。この機能をDNSと言い、この機能を提供するサーバーをDNSサーバーと言いま">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-03-16T08:31:58.000Z">
-<meta property="article:modified_time" content="2021-03-16T08:38:57.806Z">
+<meta property="article:modified_time" content="2021-03-16T08:47:17.791Z">
 <meta property="article:author" content="Kazuhiro Nakamura">
 <meta property="article:tag" content="IT 入門 とは 初心者 勉強">
 <meta name="twitter:card" content="summary">
@@ -112,19 +112,23 @@
         <p>「名前解決」ってわかりますか？<br>普段当たり前のように使用しているのですが、IT業界でも知らない人がいます。<br>(最近はWeb系で当たり前に使うので知っている人がかなり増えてきている印象です。<br>業務の畑が違うだけなので、知らないからどうこう、という内容ではありません。)</p>
 <p>「名前解決」とは、「名前」から「IPアドレス」を調べることです。<br>この機能をDNSと言い、この機能を提供するサーバーをDNSサーバーと言います。</p>
 <p>具体的にはどういうことかというと、ネットワークを使って通信するためには、相手の情報を知らなければいけません。<br>相手の情報というのが「IPアドレス」になります。<br>以前の記事で出てきた謎の数字の羅列 …192.168.1.1… これがIPアドレスです。</p>
-<p>世の中には、Webサーバーがあり、皆さん当たり前のように使用していると思います。<br>本来、Webサーバーへ通信する際にも、IPアドレスを指定する必要があります。<br>例を示すと、yahooの検索ページを表示するためには、Webブラウザで「183.79.219.252」を開く必要があります。<br>googleの検索ページを表示するためには、Webブラウザで「216.58.197.195」を開く必要があります。<br>…。覚えられませんよね。<br>皆さん、検索ページを経由しない場合、「<a target="_blank" rel="noopener" href="http://www.yahoo.co.jp」や「www.google.co.jp」などでそれぞれのページを表示すると思います./">www.yahoo.co.jp」や「www.google.co.jp」などでそれぞれのページを表示すると思います。</a></p>
-<p>まさにこの名前をIPアドレスに変換してくれているのが名前解決です。</p>
+<p>世の中には、Webサーバーがあり、皆さん当たり前のように使用していると思います。<br>本来、Webサーバーへ通信する際にも、IPアドレスを指定する必要があります。<br>例を示すと、yahooの検索ページを表示するためには、Webブラウザで「183.79.219.252」を開く必要があります。<br>googleの検索ページを表示するためには、Webブラウザで「216.58.197.195」を開く必要があります。<br>…。覚えられませんよね。<br>皆さん、検索ページを経由しない場合、以下のようなURLでそれぞれのページを表示すると思います。</p>
 <ul>
-<li>「<a target="_blank" rel="noopener" href="http://www.yahoo.co.jp」を「183.79.219.252」に変換/">www.yahoo.co.jp」を「183.79.219.252」に変換</a></li>
-<li>「<a target="_blank" rel="noopener" href="http://www.google.co.jp」を「216.58.197.195」に変換/">www.google.co.jp」を「216.58.197.195」に変換</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yahoo.co.jp/">https://www.yahoo.co.jp</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.google.co.jp/">https://www.google.co.jp</a></li>
 </ul>
-<p>ちなみに「名前」から「IPアドレス」を調べることを「正引き(せいびき)」、「IPアドレス」から「名前」を調べることを「逆引き(ぎゃくびき)」と言います。<br>知っておけば、いつか役に立つかも知れません。</p>
+<p>まさにこのURLをIPアドレスに変換してくれているのが名前解決です。</p>
+<ul>
+<li><code>www.yahoo.co.jp</code>を<code>183.79.219.252</code>に変換</li>
+<li><code>www.google.co.jp</code>を<code>216.58.197.195</code>に変換</li>
+</ul>
+<p>ちなみに <strong>「名前」から「IPアドレス」を調べることを「正引き(せいびき)」</strong> といい、<br><strong>「IPアドレス」から「名前」を調べることを「逆引き(ぎゃくびき)」</strong> と言います。<br>知っておけば、いつか役に立つかも知れません。</p>
 <h1 id="理解を深める"><a href="#理解を深める" class="headerlink" title="理解を深める"></a>理解を深める</h1><p>ちなみに以前の記事で同一ネットワークじゃなければ通信できないよ、という話があったかと思います。<br>異なるネットワークなのに通信できるのは、ルーターが必死にルーティングしてくれているからです。<br>「118.151.231.231」へアクセスするために、たくさんのルーター、たくさんのDNSサーバーが頑張ってくれて、yahooの検索ページが表示されています。<br>ルーティングの話と絡めて想像してみると、WAN、LAN、ルーターなど、ネットワークの全貌が垣間見えるかもしれません。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/name-resolve/" data-id="ckmbrm5dy000gxg2vff9lgmm1" data-title="名前解決とWebサーバー基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/name-resolve/" data-id="ckmbrwlpb000f212vbcoc9usv" data-title="名前解決とWebサーバー基礎" class="article-share-link">Share</a>
       
       
       
