@@ -87,6 +87,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-name-resolve" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/16/name-resolve/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T08:31:58.000Z" itemprop="datePublished">2021-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/16/name-resolve/">名前解決とWebサーバー基礎</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>「名前解決」ってわかりますか？<br>普段当たり前のように使用しているのですが、IT業界でも知らない人がいます。<br>(最近はWeb系で当たり前に使うので知っている人がかなり増えてきている印象です。<br>業務の畑が違うだけなので、知らないからどうこう、という内容ではありません。)</p>
+<p>「名前解決」とは、「名前」から「IPアドレス」を調べることです。<br>この機能をDNSと言い、この機能を提供するサーバーをDNSサーバーと言います。</p>
+<p>具体的にはどういうことかというと、ネットワークを使って通信するためには、相手の情報を知らなければいけません。<br>相手の情報というのが「IPアドレス」になります。<br>以前の記事で出てきた謎の数字の羅列 …192.168.1.1… これがIPアドレスです。</p>
+<p>世の中には、Webサーバーがあり、皆さん当たり前のように使用していると思います。<br>本来、Webサーバーへ通信する際にも、IPアドレスを指定する必要があります。<br>例を示すと、yahooの検索ページを表示するためには、Webブラウザで「183.79.219.252」を開く必要があります。<br>googleの検索ページを表示するためには、Webブラウザで「216.58.197.195」を開く必要があります。<br>…。覚えられませんよね。<br>皆さん、検索ページを経由しない場合、「<a target="_blank" rel="noopener" href="http://www.yahoo.co.jp」や「www.google.co.jp」などでそれぞれのページを表示すると思います./">www.yahoo.co.jp」や「www.google.co.jp」などでそれぞれのページを表示すると思います。</a></p>
+<p>まさにこの名前をIPアドレスに変換してくれているのが名前解決です。</p>
+<ul>
+<li>「<a target="_blank" rel="noopener" href="http://www.yahoo.co.jp」を「183.79.219.252」に変換/">www.yahoo.co.jp」を「183.79.219.252」に変換</a></li>
+<li>「<a target="_blank" rel="noopener" href="http://www.google.co.jp」を「216.58.197.195」に変換/">www.google.co.jp」を「216.58.197.195」に変換</a></li>
+</ul>
+<p>ちなみに「名前」から「IPアドレス」を調べることを「正引き(せいびき)」、「IPアドレス」から「名前」を調べることを「逆引き(ぎゃくびき)」と言います。<br>知っておけば、いつか役に立つかも知れません。</p>
+<h1 id="理解を深める"><a href="#理解を深める" class="headerlink" title="理解を深める"></a>理解を深める</h1><p>ちなみに以前の記事で同一ネットワークじゃなければ通信できないよ、という話があったかと思います。<br>異なるネットワークなのに通信できるのは、ルーターが必死にルーティングしてくれているからです。<br>「118.151.231.231」へアクセスするために、たくさんのルーター、たくさんのDNSサーバーが頑張ってくれて、yahooの検索ページが表示されています。<br>ルーティングの話と絡めて想像してみると、WAN、LAN、ルーターなど、ネットワークの全貌が垣間見えるかもしれません。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/name-resolve/" data-id="ckmbrm5dy000gxg2vff9lgmm1" data-title="名前解決とWebサーバー基礎" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-network-routing" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/16/network-routing/" class="article-date">
@@ -123,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-routing/" data-id="ckmbr7p6v000dsq2v25r5c184" data-title="ルーティング" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-routing/" data-id="ckmbrm5dy000ixg2v2qr87qjd" data-title="ルーティング" class="article-share-link">Share</a>
       
       
       
@@ -174,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbr7p6x000isq2v1qve61pj" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbrm5dz000jxg2v2lp61zwq" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
       
       
       
@@ -222,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbr7p6x000gsq2v2cen3xhl" data-title="WANとLANってのがある" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbrm5dw000dxg2vdsggec0l" data-title="WANとLANってのがある" class="article-share-link">Share</a>
       
       
       
@@ -294,7 +343,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbr7p6u0009sq2vgct4fkkd" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbrm5dw000cxg2v7slscscy" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
       
       
       
@@ -338,7 +387,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbr7p6v000csq2vb9qfhzw9" data-title="ネットワーク基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbrm5du0008xg2vg2zc1cjm" data-title="ネットワーク基礎" class="article-share-link">Share</a>
       
       
       
@@ -396,7 +445,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbr7p6r0004sq2v4dim0lwz" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbrm5ds0005xg2v9aj35un0" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
       
       
       
@@ -444,7 +493,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbr7p6t0008sq2vd0684b3p" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbrm5dv0009xg2vgi38b93k" data-title="いにしえの仮想化" class="article-share-link">Share</a>
       
       
       
@@ -487,7 +536,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbr7p6r0005sq2v4a805jt8" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbrm5ds0004xg2vb0ol2gt9" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -534,64 +583,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbr7p6q0003sq2v2u74fsy6" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbrm5dr0003xg2vf95g75sq" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ソフトウェア</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" rel="tag">ハードウェア</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021-03-09" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/web/2021/03/09/2021-03-09/" class="article-date">
-  <time class="dt-published" datetime="2021-03-09T10:50:45.000Z" itemprop="datePublished">2021-03-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/web/2021/03/09/2021-03-09/">インフラの整備</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="ITインフラは作ったら終わり？"><a href="#ITインフラは作ったら終わり？" class="headerlink" title="ITインフラは作ったら終わり？"></a>ITインフラは作ったら終わり？</h1><p>ITインフラも普通のインフラと同様、作ったら終わりではなく、維持管理をし続ける必要があります。<br>さらに改善も進めていく必要があり、考えること、やることはいっぱいあります。<br>インフラはとにかく検証/ノウハウの蓄積に時間がかかることと、お金がかかることが多いです。<br>検証しようとするとまず買わないといけない・契約しないといけない場合が多く端的に言うと、いいものは高いです。</p>
-<h1 id="クラウドの登場でだいぶ変わってきた"><a href="#クラウドの登場でだいぶ変わってきた" class="headerlink" title="クラウドの登場でだいぶ変わってきた"></a>クラウドの登場でだいぶ変わってきた</h1><p>クラウドの登場でだいぶ常識は変わってきましたが無料枠で勉強をしても触れない技術が多いです。<br>個人で数万課金されるのは結構痛いですよね…。<br>過去にAWSのS3、Lambda、DynamoDBの組み合わせでWebアプリケーションの個人開発をやってみました。<br>その際に興味本位で建てたRDSの存在をすっかり忘れていて2万円課金されてしまいました…。<br>データを1つも登録(insert)していなかったのに(笑)</p>
-<h1 id="冗長化とディザスタリカバリ"><a href="#冗長化とディザスタリカバリ" class="headerlink" title="冗長化とディザスタリカバリ"></a>冗長化とディザスタリカバリ</h1><p>特にシステム導入後にケアしにくいのが、冗長化とディザスタリカバリ(災害時にシステムを継続稼働させること)です。</p>
-<p>規模として、ディザスタリカバリを考える必要が高くない場合もあります。<br>例えば従業員も顧客も東京にしかないなど地理的に狭い範囲でビジネスを展開している場合です。</p>
-<p>しかし、冗長化は各種システムを導入・構築する際、常に頭の片隅に置いておく必要があります。<br>意外とバックアップも後からどうこうやりにくかったりします。<br>色々な経験を積んだメンバーで検討を繰り返して自分たちなりの正解を見つけていく必要があります。</p>
-<img src="/web/2021/03/09/2021-03-09/bousai_7707_color.webp" class="">
-
-<h1 id="冗長化とは"><a href="#冗長化とは" class="headerlink" title="冗長化とは"></a>冗長化とは</h1><p>あえてシステムに冗長(無駄)を加えることです。<br>例えば、ある機能を提供するシステムの最小構成がサーバー1台だとすると、そのサーバーを2台などの複数台で構成します。<br>このように1台壊れても機能の提供が停止しないシステムを構成することを冗長構成とする、冗長化する、などといいます。<br>やってみなければなかなかイメージがつきませんが、非常に難しいです。</p>
-<h1 id="ディザスタリカバリとは"><a href="#ディザスタリカバリとは" class="headerlink" title="ディザスタリカバリとは"></a>ディザスタリカバリとは</h1><p>災害などの大規模の障害からの業務回復を考慮して、システム全体を構築することを指します。たぶん。<br>複数のデータセンターに分散してサーバーを配置し、冗長構成をとらなければなりません。<br>システムの使用者に拠点の変更を意識させずにディザスタリカバリを行うことは意外に難しいです。</p>
-<h1 id="クラウド環境の余談"><a href="#クラウド環境の余談" class="headerlink" title="クラウド環境の余談"></a>クラウド環境の余談</h1><p>GCPもFirebaseを使って子供のおこづかい帳を個人開発してみました。<br><a target="_blank" rel="noopener" href="https://gohobi-9a425.web.app/">ごほうび</a></p>
-<p>色々と機能を追加しようと企んでいたのですが、根っこの設計に不備を見つけてしまいげんなり中です。<br>で、妻に「サブスクにしようぜ」って言ったら、こんなアプリで金払うわけねぇだろって優しく言われました。</p>
-<p>AzureはMinecraftというゲームのサーバーを建ててみました。</p>
-<p>GCP側のアプリはちょくちょく使っていて、Azure側は放置しています。<br>それでも無課金なのですごくありがたいです。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmbr7p6n0001sq2v17ak5dzb" data-title="インフラの整備" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li></ul>
 
     </footer>
   </div>
@@ -651,6 +647,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/03/16/name-resolve/">名前解決とWebサーバー基礎</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/16/network-routing/">ルーティング</a>
           </li>
         
@@ -664,10 +664,6 @@
         
           <li>
             <a href="/web/2021/03/16/2021-03-16/">恐怖のネットワーク</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/15/2021-03-15/">ネットワーク基礎</a>
           </li>
         
       </ul>
