@@ -87,6 +87,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-network-split" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/16/network-split/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T08:00:41.000Z" itemprop="datePublished">2021-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/16/network-split/">ネットワークを分割する理由</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>ネットワークを分割するのは様々な理由があります。</p>
+<ul>
+<li>ハードウェア/ソフトウェアの都合</li>
+<li>接続する機器の台数の都合</li>
+<li>かけられるコストの都合</li>
+<li>監査、セキュリティの都合</li>
+<li>用途の都合</li>
+</ul>
+<p>などなど…。<br>つまり用途によって分割する場合や、管理ルールが異なる場合などに分割されます。<br>ネットワークにコストをかけられない(機器費用が出せない、人員確保ができないなど)場合、<br>全体で1つのネットワーク、という構成もあり得ます。</p>
+<h1 id="分割しないとどうなるの？"><a href="#分割しないとどうなるの？" class="headerlink" title="分割しないとどうなるの？"></a>分割しないとどうなるの？</h1><p>状況にもよりますが、<strong>1つのネットワークに接続できる端末(パソコンなど)の台数には上限がある</strong>んです。<br>だいたい100〜200台程度の接続で上限に達してしまいます。<br>上限に達すると、IPアドレスというネットワーク上の住所がバッティングしてしまい、正しく通信できなくなります。</p>
+<h1 id="ネットワークを分割するって？"><a href="#ネットワークを分割するって？" class="headerlink" title="ネットワークを分割するって？"></a>ネットワークを分割するって？</h1><p>ネットワークを分割する、とはどういうことか。<br>まず大前提です。<br><strong>分割されたネットワーク同士は、通信することができません。</strong><br>ネットワーク上を流れるデータ(パケット)は、<strong>同一ネットワーク内でしかやり取りできません。</strong><br>これを利用してアクセス制限として利用したり、ネットワーク内を流れるトラフィック(データ量)を抑えたりします。<br>異なるネットワークをつなぐ役目を担うのが、ルーターです。<br>ルーターがパケットをルーティングすることで異なるネットワーク同士でも通信することができるようになります。<br>みんなが苦手なルーティングですね。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbqpdv1000gls2v8zxn932x" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">ネットワーク</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2021-03-16−2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/16/2021-03-16%E2%88%922/" class="article-date">
@@ -121,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbiugxh000dlr2v8dty2bfm" data-title="WANとLANってのがある" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbqpduz000dls2v6vgp3xe1" data-title="WANとLANってのがある" class="article-share-link">Share</a>
       
       
       
@@ -193,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbiugxh000clr2v672s3fom" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="ckmbqpduz000cls2va7ho6k5u" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
       
       
       
@@ -237,7 +288,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbiugxf0008lr2vclsr9xwk" data-title="ネットワーク基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="ckmbqpduy000als2vbwjr80sf" data-title="ネットワーク基礎" class="article-share-link">Share</a>
       
       
       
@@ -295,7 +346,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbiugxg0009lr2v07fz3o31" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="ckmbqpdux0008ls2v5xnm6n5o" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
       
       
       
@@ -343,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbiugxd0004lr2v31tg0tgw" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmbqpduu0003ls2v545a8wjz" data-title="いにしえの仮想化" class="article-share-link">Share</a>
       
       
       
@@ -386,7 +437,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbiugxe0005lr2vdosie6wo" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmbqpduw0005ls2vb4alfm9d" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -433,7 +484,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbiugxc0003lr2v3pnq2vc8" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmbqpdur0001ls2vcd5w1298" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
@@ -486,7 +537,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmbiugx90001lr2v74v8hrcs" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmbqpdum0000ls2vglw01iua" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
@@ -538,58 +589,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmbiugx40000lr2v9g183gdw" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmbqpduv0004ls2v4g27ag31" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-ITの仕事の種類" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" class="article-date">
-  <time class="dt-published" datetime="2021-02-04T03:30:46.000Z" itemprop="datePublished">2021-02-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/">ITの仕事の種類</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="開発？インフラ？"><a href="#開発？インフラ？" class="headerlink" title="開発？インフラ？"></a>開発？インフラ？</h1><p>IT業界にいると良く聞く言葉が「開発」と「インフラ」です。<br>IT業界は大きく、この2つにジャンル分けされます。<br>その大枠をざっくりと理解しておいてください。<br>IT業界は、お医者さんや「世の中のインフラ」に似通ったところが多くあります。<br>「開発」「インフラ」は「内科」「外科」のように全く別のものと理解頂いた方が良いです。<br>「科」の中にも「整形外科」「耳鼻咽喉科」等々、様々な科があります。<br>ITにも同様に「開発」「インフラ」の中にも様々な技術、ジャンルがあります。</p>
-<img src="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/1279_color.png" class="" title="ビルと街並み">
-
-<p>「開発」と「インフラ」の違いを理解するには「世の中のインフラ」を例にするとわかりやすいと思います。<br>「世の中のインフラ」は公共設備や基盤を指す場合が多いです。<br>ITの「インフラ」、つまりITインフラは、パソコン、サーバー、ネットワーク、ストレージ、基盤となるソフトウェアなどを指します。<br>これらITインフラを「世の中のインフラ」に置き換えると、「道路」や「施設」などに近いイメージになります。</p>
-<p>同様に開発を置き換えると、「車」や「施設で提供されるサービス」などに近いイメージになります。<br>不動産オーナーとテナントの関係に似ているかも知れません。<br>お互いが無ければ全体として成り立ちませんが、「道路」を作っている人は「車」の作り方を知りません。その逆もまた然り。<br>「施設」でどのようなサービスを提供するかは技術、アイデア次第ですが、サービスを実現できる力があっても「施設」が無ければ実現できません。</p>
-<p>このように「開発」と「インフラ」はITを知らない方が思っているより切り離された世界です。<br>全くの別物といっても過言ではありません。</p>
-<p>経験上、「開発」と「インフラ」のコミュニケーションがうまくいき、お互いに尊重しあっているプロジェクトは成功します。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckmbiugxi000flr2vavd8cf5p" data-title="ITの仕事の種類" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E9%96%8B%E7%99%BA/" rel="tag">開発</a></li></ul>
 
     </footer>
   </div>
@@ -627,7 +631,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/web/tags/IT/" style="font-size: 10px;">IT</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/OS/" style="font-size: 10px;">OS</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 20px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 16.67px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 13.33px;">ハードウェア</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 16.67px;">入門</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 13.33px;">未経験</a> <a href="/web/tags/%E9%96%8B%E7%99%BA/" style="font-size: 10px;">開発</a>
+      <a href="/web/tags/IT/" style="font-size: 10px;">IT</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/OS/" style="font-size: 10px;">OS</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 20px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 17.5px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 12.5px;">ハードウェア</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 15px;">入門</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 12.5px;">未経験</a> <a href="/web/tags/%E9%96%8B%E7%99%BA/" style="font-size: 10px;">開発</a>
     </div>
   </div>
 
@@ -649,6 +653,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/03/16/network-split/">ネットワークを分割する理由</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/16/2021-03-16%E2%88%922/">WANとLANってのがある</a>
           </li>
         
@@ -662,10 +670,6 @@
         
           <li>
             <a href="/web/2021/03/14/2021-03-14/">LinuxとWindowsの違い</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/13/2021-03-13-2/">いにしえの仮想化</a>
           </li>
         
       </ul>

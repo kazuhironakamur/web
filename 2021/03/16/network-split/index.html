@@ -13,17 +13,17 @@
     gtag('config', 'G-KPR865NPWZ');
   </script>
   
-  <title>WANとLANってのがある | あいてぃ・ぼーず</title>
+  <title>ネットワークを分割する理由 | あいてぃ・ぼーず</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="WANとLANってのがあるのはわかった。だけど、それがIT業界にいない人にはわからないんだよ！！って思いますよね。もっと早く現実世界のものに例えるべきだったのかも知れません。 WANをITじゃないもので例えるとネットワークはデータの通り道なので、よく道路に例えられます。WANを道路に例えると高速道路がイメージしやすいでしょうか。 高速道路は目的地の近くまで大雑把に移動することができると思います。高">
+  <meta name="description" content="ネットワークを分割するのは様々な理由があります。  ハードウェア&#x2F;ソフトウェアの都合 接続する機器の台数の都合 かけられるコストの都合 監査、セキュリティの都合 用途の都合  などなど…。つまり用途によって分割する場合や、管理ルールが異なる場合などに分割されます。ネットワークにコストをかけられない(機器費用が出せない、人員確保ができないなど)場合、全体で1つのネットワーク、という構成もあり得ます。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WANとLANってのがある">
-<meta property="og:url" content="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/index.html">
+<meta property="og:title" content="ネットワークを分割する理由">
+<meta property="og:url" content="https://kazuhironakamur.github.io/web/2021/03/16/network-split/index.html">
 <meta property="og:site_name" content="あいてぃ・ぼーず">
-<meta property="og:description" content="WANとLANってのがあるのはわかった。だけど、それがIT業界にいない人にはわからないんだよ！！って思いますよね。もっと早く現実世界のものに例えるべきだったのかも知れません。 WANをITじゃないもので例えるとネットワークはデータの通り道なので、よく道路に例えられます。WANを道路に例えると高速道路がイメージしやすいでしょうか。 高速道路は目的地の近くまで大雑把に移動することができると思います。高">
+<meta property="og:description" content="ネットワークを分割するのは様々な理由があります。  ハードウェア&#x2F;ソフトウェアの都合 接続する機器の台数の都合 かけられるコストの都合 監査、セキュリティの都合 用途の都合  などなど…。つまり用途によって分割する場合や、管理ルールが異なる場合などに分割されます。ネットワークにコストをかけられない(機器費用が出せない、人員確保ができないなど)場合、全体で1つのネットワーク、という構成もあり得ます。">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-03-16T03:45:00.000Z">
-<meta property="article:modified_time" content="2021-03-16T03:59:59.039Z">
+<meta property="article:published_time" content="2021-03-16T08:00:41.000Z">
+<meta property="article:modified_time" content="2021-03-16T08:14:32.157Z">
 <meta property="article:author" content="Kazuhiro Nakamura">
 <meta property="article:tag" content="インフラ">
 <meta property="article:tag" content="ネットワーク">
@@ -88,10 +88,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-2021-03-16−2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-network-split" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/web/2021/03/16/2021-03-16%E2%88%922/" class="article-date">
-  <time class="dt-published" datetime="2021-03-16T03:45:00.000Z" itemprop="datePublished">2021-03-16</time>
+    <a href="/web/2021/03/16/network-split/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T08:00:41.000Z" itemprop="datePublished">2021-03-16</time>
 </a>
     
   </div>
@@ -102,7 +102,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      WANとLANってのがある
+      ネットワークを分割する理由
     </h1>
   
 
@@ -110,19 +110,22 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><em><strong>WANとLANってのがあるのはわかった。</strong></em><br><em><strong>だけど、それがIT業界にいない人にはわからないんだよ！！</strong></em><br>って思いますよね。<br>もっと早く現実世界のものに例えるべきだったのかも知れません。</p>
-<h1 id="WANをITじゃないもので例えると"><a href="#WANをITじゃないもので例えると" class="headerlink" title="WANをITじゃないもので例えると"></a>WANをITじゃないもので例えると</h1><p>ネットワークはデータの通り道なので、よく道路に例えられます。<br>WANを道路に例えると<strong>高速道路</strong>がイメージしやすいでしょうか。</p>
-<p>高速道路は目的地の近くまで大雑把に移動することができると思います。<br>高速道路の入り方さえわかっていれば大体の目的地は標識に書いてあり、<br>みなさんが維持・管理する必要はありません。<br>管理してくれている組織・団体がいて、お金を払って通らせてもらう。</p>
-<p>これがWAN、インターネットのイメージに近いです。</p>
-<h1 id="じゃあLANは？"><a href="#じゃあLANは？" class="headerlink" title="じゃあLANは？"></a>じゃあLANは？</h1><p>LANは高速道路じゃなければ一般道？<br>私は一般道より私道に近いイメージです。</p>
-<p>私道だから、どこに何があるか把握しているけど、<br>ゴミが落ちていたり、道路の修繕は自分たちの責任範囲になります。<br>たまに知らない人が勝手に入ってきたり、ゴミをポイ捨てしたり、ポストを覗こうとしたりする。</p>
-<p>これがLANのイメージに近いです。</p>
-<p>大まかに2つのネットワークの違いがイメージできたでしょうか。</p>
+        <p>ネットワークを分割するのは様々な理由があります。</p>
+<ul>
+<li>ハードウェア/ソフトウェアの都合</li>
+<li>接続する機器の台数の都合</li>
+<li>かけられるコストの都合</li>
+<li>監査、セキュリティの都合</li>
+<li>用途の都合</li>
+</ul>
+<p>などなど…。<br>つまり用途によって分割する場合や、管理ルールが異なる場合などに分割されます。<br>ネットワークにコストをかけられない(機器費用が出せない、人員確保ができないなど)場合、<br>全体で1つのネットワーク、という構成もあり得ます。</p>
+<h1 id="分割しないとどうなるの？"><a href="#分割しないとどうなるの？" class="headerlink" title="分割しないとどうなるの？"></a>分割しないとどうなるの？</h1><p>状況にもよりますが、<strong>1つのネットワークに接続できる端末(パソコンなど)の台数には上限がある</strong>んです。<br>だいたい100〜200台程度の接続で上限に達してしまいます。<br>上限に達すると、IPアドレスというネットワーク上の住所がバッティングしてしまい、正しく通信できなくなります。</p>
+<h1 id="ネットワークを分割するって？"><a href="#ネットワークを分割するって？" class="headerlink" title="ネットワークを分割するって？"></a>ネットワークを分割するって？</h1><p>ネットワークを分割する、とはどういうことか。<br>まず大前提です。<br><strong>分割されたネットワーク同士は、通信することができません。</strong><br>ネットワーク上を流れるデータ(パケット)は、<strong>同一ネットワーク内でしかやり取りできません。</strong><br>これを利用してアクセス制限として利用したり、ネットワーク内を流れるトラフィック(データ量)を抑えたりします。<br>異なるネットワークをつなぐ役目を担うのが、ルーターです。<br>ルーターがパケットをルーティングすることで異なるネットワーク同士でも通信することができるようになります。<br>みんなが苦手なルーティングですね。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="ckmbqpduz000dls2v6vgp3xe1" data-title="WANとLANってのがある" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="ckmbqpdv1000gls2v8zxn932x" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
       
       
       
@@ -134,19 +137,10 @@
     
 <nav id="article-nav">
   
-    <a href="/web/2021/03/16/network-split/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ネットワークを分割する理由
-        
-      </div>
-    </a>
   
-  
-    <a href="/web/2021/03/16/2021-03-16/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/web/2021/03/16/2021-03-16%E2%88%922/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">恐怖のネットワーク</div>
+      <div class="article-nav-title">WANとLANってのがある</div>
     </a>
   
 </nav>
