@@ -87,6 +87,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2021-03-13-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/13/2021-03-13-2/" class="article-date">
+  <time class="dt-published" datetime="2021-03-13T00:00:00.000Z" itemprop="datePublished">2021-03-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/13/2021-03-13-2/">いにしえの仮想化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="物理と仮想基礎"><a href="#物理と仮想基礎" class="headerlink" title="物理と仮想基礎"></a>物理と仮想基礎</h1><p>仮想化の登場により、様々なものが影響を受けました。<br>時系列はよくわかりませんが、おそらく最初の仮想化はアプリケーションの仮想化です。<br>(ストレージが最初かも知れません…？)</p>
+<p>皆さんの良く使うExcelなどなどが仮想化され、各PCにインストールしなくても使えるようになりました。<br>アプリケーションサーバーにインストールされているExcelを共有することで、<br>あたかも自身のPCにインストールされているかのように使用できるようになりました。<br>(実行イメージをネットワーク経由でメモリ上に展開しているんでしょうけど、<br> 何をしているのか全く分かりません。とにかく天才って世の中にいるんですね！)</p>
+<p>この方式はライセンス的にかなりグレーで抜け穴が多かったのか最近は流行ってませんね。<br>インフラの構築・維持が難しいことや、アプリケーション仮想化ソフトウェアのライセンス費が高いと感じられてるのかも。<br>アプリケーションの設定をイメージ化して一括で管理できる良さがあります。<br>その反面、イメージの管理に追われることになりがちです。<br>デスクトップ仮想化の登場や、Webアプリケーションが便利すぎるから使われなくなったのかな。</p>
+<p>次に仮想化されたのはおそらくサーバーです。<br>仮想化といえばサーバー、というぐらいメジャーなものに成長しました。<br>その後、ネットワークの仮想化など、様々なものが仮想化されて行っています。</p>
+<h1 id="ストレージの仮想化"><a href="#ストレージの仮想化" class="headerlink" title="ストレージの仮想化"></a>ストレージの仮想化</h1><p>ストレージの仮想化っていうとクラウド上のディスクをイメージすると思います。<br>私はRAIDなどの技術も仮想化だなぁと思っています。<br>その考え方から、最初の仮想化はストレージかも知れないと考えたりしています。</p>
+<p>RAIDのそもそもの考え方は、やっすいディスクをいっぱい並列で使えば、<br>大容量で高速はディスクを安く調達できるよね、っていう発想からきています。<br>人間で極端にたとえると、100文字を一人に覚えさせるのは優秀な人が必要だから、1文字を100人に覚えさせるイメージ。<br>(100人…採算取れなさそう…)</p>
+<p>だから、RAID-0がストライピング(分散書き込みして高速化)なのかも知れません。<br>やっすいディスクをいっぱい繋いだ結果、壊れて消えちゃいましたーが起きてしまって、<br>じゃあ同じ内容をいっぱい書き込んだらいいじゃん！からのRAID-1のミラーリングが登場？したのかも知れません。<br>こちらも無理矢理例えると、同じことを2人の人に覚えてもらうイメージ。</p>
+<p>RAID-0と1、どっちがどっちかわからなくなるのでRAIDの最初の目的から覚えるといいかも。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="ckmrehuro0005t62v4dbd1mrf" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" rel="tag">仮想化</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2021-03-13" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/13/2021-03-13/" class="article-date">
@@ -120,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmreei6f0005qa2vcrk02l1j" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="ckmrehurp0006t62v7nkt4whz" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -171,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmreei6b0001qa2v18acbszb" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="ckmrehurn0003t62vggob824c" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
@@ -228,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmreei6i000aqa2vgm7de06s" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="ckmrehurj0001t62v153d0t3m" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
@@ -284,7 +336,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmreei650000qa2venrk4a2l" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="ckmrehurd0000t62v4yrhb79e" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
@@ -333,7 +385,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckmreei6n000oqa2vatn2asb2" data-title="ITの仕事の種類" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="ckmrehury000pt62v75ow0bky" data-title="ITの仕事の種類" class="article-share-link">Share</a>
       
       
       
@@ -389,7 +441,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckmreei6u0016qa2v3gimch0u" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="ckmrehus8001at62v2z5p2309" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
       
       
       
@@ -440,7 +492,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckmreei6t0011qa2v2kky4lnn" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/02/to-not-it/" data-id="ckmrehus60016t62v5ytn6x9p" data-title="ITに飛び込んでみたい人へ" class="article-share-link">Share</a>
       
       
       
@@ -490,7 +542,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckmreei7b0034qa2v8gn830xn" data-title="これは何？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/02/01/what-is-this/" data-id="ckmrehusb001dt62v4ef53xhc" data-title="これは何？" class="article-share-link">Share</a>
       
       
       
@@ -539,7 +591,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/web/tags/BCP/" style="font-size: 10px;">BCP</a> <a href="/web/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/web/tags/LAN/" style="font-size: 10px;">LAN</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/WAN/" style="font-size: 10px;">WAN</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 16.67px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" style="font-size: 10px;">ディスタリカバリ</a> <a href="/web/tags/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/" style="font-size: 13.33px;">データベース</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 13.33px;">ハードウェア</a> <a href="/web/tags/%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/" style="font-size: 10px;">ルーティング</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 20px;">入門</a> <a href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" style="font-size: 10px;">冗長化</a> <a href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" style="font-size: 10px;">分かれ目</a> <a href="/web/tags/%E5%88%86%E5%89%B2/" style="font-size: 10px;">分割</a> <a href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" style="font-size: 10px;">名前解決</a> <a href="/web/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 10px;">基本</a> <a href="/web/tags/%E5%A2%83%E7%9B%AE/" style="font-size: 10px;">境目</a> <a href="/web/tags/%E6%95%B4%E5%82%99/" style="font-size: 10px;">整備</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 13.33px;">未経験</a> <a href="/web/tags/%E7%A8%AE%E9%A1%9E/" style="font-size: 10px;">種類</a>
+      <a href="/web/tags/BCP/" style="font-size: 10px;">BCP</a> <a href="/web/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/web/tags/LAN/" style="font-size: 10px;">LAN</a> <a href="/web/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/web/tags/WAN/" style="font-size: 10px;">WAN</a> <a href="/web/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" style="font-size: 20px;">インフラ</a> <a href="/web/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 10px;">ソフトウェア</a> <a href="/web/tags/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA/" style="font-size: 10px;">ディスタリカバリ</a> <a href="/web/tags/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9/" style="font-size: 16.67px;">データベース</a> <a href="/web/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">ネットワーク</a> <a href="/web/tags/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/" style="font-size: 13.33px;">ハードウェア</a> <a href="/web/tags/%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/" style="font-size: 10px;">ルーティング</a> <a href="/web/tags/%E4%BB%AE%E6%83%B3%E5%8C%96/" style="font-size: 10px;">仮想化</a> <a href="/web/tags/%E5%85%A5%E9%96%80/" style="font-size: 20px;">入門</a> <a href="/web/tags/%E5%86%97%E9%95%B7%E5%8C%96/" style="font-size: 10px;">冗長化</a> <a href="/web/tags/%E5%88%86%E3%81%8B%E3%82%8C%E7%9B%AE/" style="font-size: 10px;">分かれ目</a> <a href="/web/tags/%E5%88%86%E5%89%B2/" style="font-size: 10px;">分割</a> <a href="/web/tags/%E5%90%8D%E5%89%8D%E8%A7%A3%E6%B1%BA/" style="font-size: 10px;">名前解決</a> <a href="/web/tags/%E5%9F%BA%E6%9C%AC/" style="font-size: 10px;">基本</a> <a href="/web/tags/%E5%A2%83%E7%9B%AE/" style="font-size: 10px;">境目</a> <a href="/web/tags/%E6%95%B4%E5%82%99/" style="font-size: 10px;">整備</a> <a href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" style="font-size: 13.33px;">未経験</a> <a href="/web/tags/%E7%A8%AE%E9%A1%9E/" style="font-size: 10px;">種類</a>
     </div>
   </div>
 
@@ -561,6 +613,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/03/27/20210327%E2%88%922/">データベースを操作する</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/03/27/20210327/">データベースのプロを目指す</a>
           </li>
         
@@ -574,10 +630,6 @@
         
           <li>
             <a href="/web/2021/03/16/network-routing/">ルーティング</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/16/network-split/">ネットワークを分割する理由</a>
           </li>
         
       </ul>
