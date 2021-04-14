@@ -13,23 +13,21 @@
     gtag('config', 'G-KPR865NPWZ');
   </script>
   
-  <title>ITってなんなんだろう | あいてぃ・ぼーず</title>
+  <title>どうすればいいバックアップになるの？ | あいてぃ・ぼーず</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ITとはもうITがなんなのかと考える人はいませんよね。でも、ITってなんなんでしょうか。 Information Technology情報処理技術 つまり、情報を処理する技術ってことですよね。情報を処理するってなんなんでしょう。 私はITエンジニアとしてご飯を食べ始めて15年以上になります。ですが、正解はわかりません。 世の中にはITと称して詐欺まがいのことをやっている方もいます。ITが苦手な方を">
+  <meta name="description" content="リストアできるのはもちろんですが、前述の問題を解決するためには、バックアップを「設計」する必要があります。具体的には、  バックアップすべきデータを最小化する データを保持すべき期間を最小化する データの特性に応じて、バックアップ方法&#x2F;バックアップタイミングを変更する  などと向き合い決めていく必要があります。最小のデータ保持期間だけとっても、「取れるだけ取っといて」と言われることが多く、バックア">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ITってなんなんだろう">
-<meta property="og:url" content="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/index.html">
+<meta property="og:title" content="どうすればいいバックアップになるの？">
+<meta property="og:url" content="https://kazuhironakamur.github.io/web/2021/04/14/20210414%E2%88%923/index.html">
 <meta property="og:site_name" content="あいてぃ・ぼーず">
-<meta property="og:description" content="ITとはもうITがなんなのかと考える人はいませんよね。でも、ITってなんなんでしょうか。 Information Technology情報処理技術 つまり、情報を処理する技術ってことですよね。情報を処理するってなんなんでしょう。 私はITエンジニアとしてご飯を食べ始めて15年以上になります。ですが、正解はわかりません。 世の中にはITと称して詐欺まがいのことをやっている方もいます。ITが苦手な方を">
+<meta property="og:description" content="リストアできるのはもちろんですが、前述の問題を解決するためには、バックアップを「設計」する必要があります。具体的には、  バックアップすべきデータを最小化する データを保持すべき期間を最小化する データの特性に応じて、バックアップ方法&#x2F;バックアップタイミングを変更する  などと向き合い決めていく必要があります。最小のデータ保持期間だけとっても、「取れるだけ取っといて」と言われることが多く、バックア">
 <meta property="og:locale">
-<meta property="og:image" content="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/4058_color.png">
-<meta property="article:published_time" content="2021-02-03T03:30:00.000Z">
-<meta property="article:modified_time" content="2021-03-16T08:59:09.584Z">
+<meta property="article:published_time" content="2021-04-14T04:15:00.000Z">
+<meta property="article:modified_time" content="2021-04-14T07:33:59.727Z">
 <meta property="article:author" content="Kazuhiro Nakamura">
-<meta property="article:tag" content="入門">
-<meta property="article:tag" content="未経験">
+<meta property="article:tag" content="インフラ">
+<meta property="article:tag" content="バックアップ">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/4058_color.png">
   
     <link rel="alternate" href="/web/atom.xml" title="あいてぃ・ぼーず" type="application/atom+xml">
   
@@ -90,14 +88,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-what-is-it" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-20210414−3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/web/2021/02/03/what-is-it/" class="article-date">
-  <time class="dt-published" datetime="2021-02-03T03:30:00.000Z" itemprop="datePublished">2021-02-03</time>
+    <a href="/web/2021/04/14/20210414%E2%88%923/" class="article-date">
+  <time class="dt-published" datetime="2021-04-14T04:15:00.000Z" itemprop="datePublished">2021-04-14</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/web/categories/IT/">IT</a>
+    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>►<a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/">バックアップ</a>
   </div>
 
   </div>
@@ -108,7 +106,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      ITってなんなんだろう
+      どうすればいいバックアップになるの？
     </h1>
   
 
@@ -116,27 +114,23 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="ITとは"><a href="#ITとは" class="headerlink" title="ITとは"></a>ITとは</h1><p>もうITがなんなのかと考える人はいませんよね。<br>でも、ITってなんなんでしょうか。</p>
-<p>Information Technology<br>情報処理技術</p>
-<p>つまり、情報を処理する技術ってことですよね。<br>情報を処理するってなんなんでしょう。</p>
-<p>私はITエンジニアとしてご飯を食べ始めて15年以上になります。<br>ですが、正解はわかりません。</p>
-<p>世の中にはITと称して詐欺まがいのことをやっている方もいます。<br>ITが苦手な方を食い物にしている方もいます。</p>
-<p>そのような姿を見る度に、ITはなんなんだろう、と苦しんできました。</p>
-<h1 id="私の思うIT"><a href="#私の思うIT" class="headerlink" title="私の思うIT"></a>私の思うIT</h1><p>正解はわかりませんが、私の出した答えです。<br>ITは「たくさんの人たちが世界をより良くするために考え出した道具」です。<br>世の中には便利なものが溢れていますが、ITもそのうちの一つです。<br>なんら特別なものではありません。</p>
-<p>たとえば包丁。<br>誰かを喜ばせるための道具として使う人もいれば、誰かを苦しめるための道具として使う人もいます。<br>それと同じです。</p>
-<p>私はパソコンでできる色々なことで、誰かを笑わせたり喜ばせたり幸せにしたい、と願っています。</p>
-<img src="/web/2021/02/03/what-is-it/4058_color.png" class="" title="誰かの力になれるって良いよね">
-
-<p>すみません、ポエムで。<br>忘れないように、自責のために書き記します。</p>
+        <p>リストアできるのはもちろんですが、前述の問題を解決するためには、バックアップを「設計」する必要があります。<br>具体的には、</p>
+<ul>
+<li>バックアップすべきデータを最小化する</li>
+<li>データを保持すべき期間を最小化する</li>
+<li>データの特性に応じて、バックアップ方法/バックアップタイミングを変更する</li>
+</ul>
+<p>などと向き合い決めていく必要があります。<br>最小のデータ保持期間だけとっても、「取れるだけ取っといて」と言われることが多く、バックアップの設計は難航を極めます。<br>ありとあらゆるデータが「バックアップ」という言葉でひとくくりにされるため、考慮すべき内容が多く、データの特性やバックアップの経路の性能などをイメージしながら、リスクを負っていきます。<br>最後の砦として心配のないバックアップが構築できた時、それは間違いなく「良いバックアップ」です。</p>
+<p>大丈夫、あなたの心配はバックアップの品質に反映されます。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/03/what-is-it/" data-id="cknh50zaq001op52v4kzm0lqp" data-title="ITってなんなんだろう" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/04/14/20210414%E2%88%923/" data-id="cknh50zaf000yp52v7ca97mko" data-title="どうすればいいバックアップになるの？" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E5%85%A5%E9%96%80/" rel="tag">入門</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E6%9C%AA%E7%B5%8C%E9%A8%93/" rel="tag">未経験</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="tag">インフラ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/" rel="tag">バックアップ</a></li></ul>
 
     </footer>
   </div>
@@ -144,19 +138,10 @@
     
 <nav id="article-nav">
   
-    <a href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ITの仕事の種類
-        
-      </div>
-    </a>
   
-  
-    <a href="/web/2021/02/02/to-not-it/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/web/2021/04/14/20210414%E2%88%922/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">ITに飛び込んでみたい人へ</div>
+      <div class="article-nav-title">真面目にバックアップする</div>
     </a>
   
 </nav>
