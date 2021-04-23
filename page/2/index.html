@@ -87,6 +87,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-network-split" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/web/2021/03/16/network-split/" class="article-date">
+  <time class="dt-published" datetime="2021-03-16T08:00:41.000Z" itemprop="datePublished">2021-03-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">インフラ</a>►<a class="article-category-link" href="/web/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/web/2021/03/16/network-split/">ネットワークを分割する理由</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>ネットワークを分割するのは様々な理由があります。</p>
+<ul>
+<li>ハードウェア/ソフトウェアの都合</li>
+<li>接続する機器の台数の都合</li>
+<li>かけられるコストの都合</li>
+<li>監査、セキュリティの都合</li>
+<li>用途の都合</li>
+</ul>
+<p>などなど…。<br>つまり用途によって分割する場合や、管理ルールが異なる場合などに分割されます。<br>ネットワークにコストをかけられない(機器費用が出せない、人員確保ができないなど)場合、<br>全体で1つのネットワーク、という構成もあり得ます。</p>
+<h1 id="分割しないとどうなるの？"><a href="#分割しないとどうなるの？" class="headerlink" title="分割しないとどうなるの？"></a>分割しないとどうなるの？</h1><p>状況にもよりますが、<strong>1つのネットワークに接続できる端末(パソコンなど)の台数には上限がある</strong>んです。<br>だいたい100〜200台程度の接続で上限に達してしまいます。<br>上限に達すると、IPアドレスというネットワーク上の住所がバッティングしてしまい、正しく通信できなくなります。</p>
+<h1 id="ネットワークを分割するって？"><a href="#ネットワークを分割するって？" class="headerlink" title="ネットワークを分割するって？"></a>ネットワークを分割するって？</h1><p>ネットワークを分割する、とはどういうことか。<br>まず大前提です。<br><strong>分割されたネットワーク同士は、通信することができません。</strong><br>ネットワーク上を流れるデータ(パケット)は、<strong>同一ネットワーク内でしかやり取りできません。</strong><br>これを利用してアクセス制限として利用したり、ネットワーク内を流れるトラフィック(データ量)を抑えたりします。<br>異なるネットワークをつなぐ役目を担うのが、ルーターです。<br>ルーターがパケットをルーティングすることで異なるネットワーク同士でも通信することができるようになります。<br>みんなが苦手なルーティングですね。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/network-split/" data-id="cknu19m1i001llq2vbtaddx6q" data-title="ネットワークを分割する理由" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E5%88%86%E5%89%B2/" rel="tag">分割</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2021-03-16−2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/web/2021/03/16/2021-03-16%E2%88%922/" class="article-date">
@@ -125,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="cknh50za5000hp52vfq0vfodr" data-title="WANとLANってのがある" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16%E2%88%922/" data-id="cknu19m0x000glq2v4ezhddox" data-title="WANとLANってのがある" class="article-share-link">Share</a>
       
       
       
@@ -201,7 +256,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="cknh50za4000ep52vfku1997z" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/16/2021-03-16/" data-id="cknu19m0x000dlq2v6hmsb0wf" data-title="恐怖のネットワーク" class="article-share-link">Share</a>
       
       
       
@@ -249,7 +304,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="cknh50za20008p52v2ckpenai" data-title="ネットワーク基礎" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/15/2021-03-15/" data-id="cknu19m0w000alq2ve23ffx8v" data-title="ネットワーク基礎" class="article-share-link">Share</a>
       
       
       
@@ -311,7 +366,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="cknh50za00006p52veeeidt4m" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/14/2021-03-14/" data-id="cknu19m0v0008lq2vd9k05zy0" data-title="LinuxとWindowsの違い" class="article-share-link">Share</a>
       
       
       
@@ -363,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="cknh50z9v0001p52vh1rz47va" data-title="いにしえの仮想化" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13-2/" data-id="cknu19m0s0005lq2v6bvxa1m6" data-title="いにしえの仮想化" class="article-share-link">Share</a>
       
       
       
@@ -410,7 +465,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="cknh50z9y0003p52vaqzz2e86" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/13/2021-03-13/" data-id="cknu19m0t0006lq2v3rjn1xar" data-title="ハードウェアをもう少し" class="article-share-link">Share</a>
       
       
       
@@ -461,7 +516,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="cknh50za4000bp52v8ifi68a8" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/12/2021-03-12/" data-id="cknu19m0r0003lq2v7vjvdfmc" data-title="ハードウェア？ソフトウェア？" class="article-share-link">Share</a>
       
       
       
@@ -518,7 +573,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="cknh50z9z0005p52v3jpu0jqz" data-title="インフラの整備" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/09/2021-03-09/" data-id="cknu19m0n0001lq2vapvrg59f" data-title="インフラの整備" class="article-share-link">Share</a>
       
       
       
@@ -574,61 +629,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="cknh50z9q0000p52vg5579iyw" data-title="インフラの情勢" class="article-share-link">Share</a>
+      <a data-url="https://kazuhironakamur.github.io/web/2021/03/08/2021-03-08/" data-id="cknu19m0i0000lq2v465ado8b" data-title="インフラの情勢" class="article-share-link">Share</a>
       
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-ITの仕事の種類" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" class="article-date">
-  <time class="dt-published" datetime="2021-02-04T03:30:46.000Z" itemprop="datePublished">2021-02-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/web/categories/IT/">IT</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/">ITの仕事の種類</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="開発？インフラ？"><a href="#開発？インフラ？" class="headerlink" title="開発？インフラ？"></a>開発？インフラ？</h1><p>IT業界にいると良く聞く言葉が「開発」と「インフラ」です。<br>IT業界は大きく、この2つにジャンル分けされます。<br>その大枠をざっくりと理解しておいてください。<br>IT業界は、お医者さんや「世の中のインフラ」に似通ったところが多くあります。<br>「開発」「インフラ」は「内科」「外科」のように全く別のものと理解頂いた方が良いです。<br>「科」の中にも「整形外科」「耳鼻咽喉科」等々、様々な科があります。<br>ITにも同様に「開発」「インフラ」の中にも様々な技術、ジャンルがあります。</p>
-<img src="/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/1279_color.png" class="" title="ビルと街並み">
-
-<p>「開発」と「インフラ」の違いを理解するには「世の中のインフラ」を例にするとわかりやすいと思います。<br>「世の中のインフラ」は公共設備や基盤を指す場合が多いです。<br>ITの「インフラ」、つまりITインフラは、パソコン、サーバー、ネットワーク、ストレージ、基盤となるソフトウェアなどを指します。<br>これらITインフラを「世の中のインフラ」に置き換えると、「道路」や「施設」などに近いイメージになります。</p>
-<p>同様に開発を置き換えると、「車」や「施設で提供されるサービス」などに近いイメージになります。<br>不動産オーナーとテナントの関係に似ているかも知れません。<br>お互いが無ければ全体として成り立ちませんが、「道路」を作っている人は「車」の作り方を知りません。その逆もまた然り。<br>「施設」でどのようなサービスを提供するかは技術、アイデア次第ですが、サービスを実現できる力があっても「施設」が無ければ実現できません。</p>
-<p>このように「開発」と「インフラ」はITを知らない方が思っているより切り離された世界です。<br>全くの別物といっても過言ではありません。</p>
-<p>経験上、「開発」と「インフラ」のコミュニケーションがうまくいき、お互いに尊重しあっているプロジェクトは成功します。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kazuhironakamur.github.io/web/2021/02/04/IT%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AE%E7%A8%AE%E9%A1%9E/" data-id="cknh50zaj0012p52vbhjmg38b" data-title="ITの仕事の種類" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/web/tags/%E7%A8%AE%E9%A1%9E/" rel="tag">種類</a></li></ul>
-
     </footer>
   </div>
   
@@ -694,6 +698,10 @@
       <ul>
         
           <li>
+            <a href="/web/2021/04/23/20210423-1/">ジョブ基礎</a>
+          </li>
+        
+          <li>
             <a href="/web/2021/04/14/20210414%E2%88%923/">どうすればいいバックアップになるの？</a>
           </li>
         
@@ -707,10 +715,6 @@
         
           <li>
             <a href="/web/2021/03/27/20210327%E2%88%923/">企業におけるデータベース</a>
-          </li>
-        
-          <li>
-            <a href="/web/2021/03/27/20210327%E2%88%922/">データベースを操作する</a>
           </li>
         
       </ul>
